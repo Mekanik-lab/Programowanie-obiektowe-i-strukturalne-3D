@@ -34,26 +34,15 @@
 
         public void Task()
         {
-            try
-            {
-                Console.Write("Podaj pierwszą liczbę a: ");
-                int a = int.Parse(Console.ReadLine());
+            Console.Write("Podaj pierwszą liczbę a: ");
+            int a = int.Parse(Console.ReadLine());
 
-                Console.Write("Podaj drugą liczbę b: ");
-                int b = int.Parse(Console.ReadLine());
+            Console.Write("Podaj drugą liczbę b: ");
+            int b = int.Parse(Console.ReadLine());
 
-                int nwd = AlgorytmEuklidesa(a, b);
+            int nwd = AlgorytmEuklidesa(a, b);
 
-                Console.WriteLine($"Największy wspólny dzielnik liczb {a} i {b} wynosi: {nwd}");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Błąd: Wprowadzono nieprawidłowe dane.");
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine($"Błąd: {ex.Message}");
-            }
+            Console.WriteLine($"Największy wspólny dzielnik liczb {a} i {b} wynosi: {nwd}");
         }
     }
 }
