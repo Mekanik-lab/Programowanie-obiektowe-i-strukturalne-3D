@@ -1,18 +1,17 @@
-﻿
-using PolymorphismConsoleApp;
-using static System.Net.Mime.MediaTypeNames;
+﻿using PolymorphismConsoleApp;
 
 Rectangle rectangle = new Rectangle(5,9);
 
 rectangle.ShowInfo();
 
-Trapeze trapeze = new(15, 16, 87, 4, 15);
-
+Trapeze trapeze = new(15, 16, 87, 4, 15); //operator new
+//public new int ShowInfo() - modyfikator
 trapeze.ShowInfo();
 
 
 Square square = new(4);
 square.ShowInfo();
+//Tutaj występuje wiązanie długie ponieważ ShowInfo jest metodą abstrakcyjną
 
 Triangle triangle = new(1, 2, 3, 5);
 triangle.ShowInfo();
@@ -21,6 +20,7 @@ Figure figure;// = new Figure();
 
 Cat cat = new Cat("Filemon");
 cat.Meow();
+//Tutaj występuje wiązanie krótkie ponieważ Meow jest metodą zwykłą.
 
 //int x = 5;
 //float y = x;

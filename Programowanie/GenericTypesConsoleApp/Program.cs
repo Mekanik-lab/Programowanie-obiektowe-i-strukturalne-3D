@@ -1,8 +1,5 @@
-﻿
-using GenericTypesConsoleApp;
+﻿using GenericTypesConsoleApp;
 using System.Numerics;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 ContainerInt container = new ContainerInt(45);
 container.Show();
@@ -30,6 +27,14 @@ if (firstAction is not null)
     firstAction();
 //TestMethod = firstAction;
 
+/*
+Action - klasa która reprezentuje metodę, która nie zwraca 
+wartości i nie przyjmuje żadnych parametrów.
+Jest to klasa generyczna, która może przyjmować od 0 do 16 parametrów.
+Action<int> - klasa która reprezentuje metodę, 
+która nie zwraca wartości i przyjmuje jeden parametr typu int.
+*/
+
 Action<int> secondAction = null;
 secondAction = TestSecondMethod;
 secondAction = (int value) => { Console.WriteLine($"To jest testowa metoda wywołana z parametrem {value}"); };
@@ -44,6 +49,15 @@ firstFunc = () =>  /*return*/ 4.7;
 double x;
 if (firstFunc is not null)
     x = firstFunc();
+
+/*
+Func - klasa która reprezentuje metodę, która zwraca wartość 
+i może przyjmować od 0 do 16 parametrów.
+Func<int, string> - klasa która reprezentuje metodę, 
+która zwraca wartość typu string i przyjmuje jeden parametr typu int.
+Func<int> - klasa która reprezentuje metodę, 
+która zwraca wartość typu int i nie przyjmuje żadnych parametrów.   `
+*/
 
 Func<string, int> secondFunc = null;
 secondFunc = TestFourthMethod;

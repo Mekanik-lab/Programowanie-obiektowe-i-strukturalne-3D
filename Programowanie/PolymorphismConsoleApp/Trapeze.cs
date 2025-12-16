@@ -54,3 +54,9 @@ internal class Trapeze : Figure
         -------------------------
                     b
 */
+
+/*
+Trapez dziedziczy po Figure, więc musi implementować wszystkie jej metody 
+abstrakcyjne. Implementacja ta odbywa się poprzez przesłonięcie metod 
+za pomocą słowa kluczowego "override".
+*/

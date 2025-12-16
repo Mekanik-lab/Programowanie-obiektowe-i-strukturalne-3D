@@ -112,3 +112,15 @@ class Container_sdfhsdfghdf
     }
 }
 */
+
+/*
+Typów generycznych używamy, gdy chcemy stworzyć klasę, strukturę, 
+interfejs lub metodę, która może działać z dowolnym typem danych,
+bez konieczności definiowania osobnej wersji dla każdego typu.
+Aby nie łamać zasady DRY.
+
+Funkcji anonimowych używamy, gdy chcemy stworzyć krótką funkcję,
+która nie wymaga osobnej deklaracji i może być użyta w miejscu,
+gdzie jest potrzebna, na przykład jako argument do innej funkcji.
+
+*/
