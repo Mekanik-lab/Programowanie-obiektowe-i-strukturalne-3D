@@ -23,8 +23,10 @@
 }
 
 /*
-Aby stworzyć klasę abstrakcyjną w C#, używamy słowa kluczowego "abstract" przed
-deklaracją klasy. Klasa abstrakcyjna może zawierać zarówno metody abstrakcyjne 
+Aby stworzyć klasę abstrakcyjną w C#, używamy słowa kluczowego 
+"abstract" przed
+deklaracją klasy. Klasa abstrakcyjna może zawierać zarówno metody 
+abstrakcyjne 
 (bez implementacji), jak i metody z implementacją. Metody abstrakcyjne 
 muszą być oznaczone jako "abstract" i nie mogą mieć ciała. Klasy 
 dziedziczące po klasie abstrakcyjnej muszą implementować wszystkie 
@@ -58,4 +60,6 @@ metod niestatycznych (nie oznaczonych jako "virtual" lub "abstract")
 oraz metod przesłoniętych (oznaczonych jako "new"). W tych przypadkach
 decyzja o tym, która metoda zostanie wywołana, jest podejmowana na etapie
 kompilacji, w zależności od typu zmiennej, a nie rzeczywistego typu obiektu.
+
+Polimorfizm - zdolność do przyjmowania wielu form przez kod.
 */

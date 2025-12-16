@@ -122,5 +122,4 @@ Aby nie łamać zasady DRY.
 Funkcji anonimowych używamy, gdy chcemy stworzyć krótką funkcję,
 która nie wymaga osobnej deklaracji i może być użyta w miejscu,
 gdzie jest potrzebna, na przykład jako argument do innej funkcji.
-
 */

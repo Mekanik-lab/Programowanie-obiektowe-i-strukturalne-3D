@@ -22,6 +22,7 @@ fourthContainer.Show();
 Action firstAction = null;
 firstAction = TestMethod;
 firstAction = () => { Console.WriteLine("To jest testowa metoda"); };
+// wyrażenie lambda to uproszczona forma definiowania metod anonimowych
 firstAction = () => Console.WriteLine("To jest testowa metoda");
 if (firstAction is not null)
     firstAction();
