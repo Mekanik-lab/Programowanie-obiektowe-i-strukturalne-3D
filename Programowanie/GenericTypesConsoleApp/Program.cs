@@ -5,7 +5,7 @@ ContainerInt container = new ContainerInt(45);
 container.Show();
 
 ContainerString secondContainer = new ContainerString("Ala ma kota");
-secondContainer.Show();
+secondContainer.Show(); 
 
 
 Container<int> thirdContainer = new Container<int>(78);
