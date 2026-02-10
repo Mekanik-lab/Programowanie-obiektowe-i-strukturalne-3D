@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsConsoleApp", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqConsoleApp", "LinqConsoleApp\LinqConsoleApp.csproj", "{DC87C47D-6F0D-49C7-B7F8-5D391295D249}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqPracticalTaskConsoleApp", "LinqPracticalTaskConsoleApp\LinqPracticalTaskConsoleApp.csproj", "{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -461,6 +463,18 @@ Global
 		{DC87C47D-6F0D-49C7-B7F8-5D391295D249}.Release|x64.Build.0 = Release|Any CPU
 		{DC87C47D-6F0D-49C7-B7F8-5D391295D249}.Release|x86.ActiveCfg = Release|Any CPU
 		{DC87C47D-6F0D-49C7-B7F8-5D391295D249}.Release|x86.Build.0 = Release|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Debug|x64.Build.0 = Debug|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Debug|x86.Build.0 = Debug|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Release|x64.ActiveCfg = Release|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Release|x64.Build.0 = Release|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Release|x86.ActiveCfg = Release|Any CPU
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -508,6 +522,7 @@ Global
 		{6AA675EE-ACD4-61FC-8340-B00E90054560} = {CD9D3C4B-69CC-4818-8A69-4235B0E4E975}
 		{F5690B08-F706-4394-9814-3058B9540503} = {CD9D3C4B-69CC-4818-8A69-4235B0E4E975}
 		{DC87C47D-6F0D-49C7-B7F8-5D391295D249} = {CD9D3C4B-69CC-4818-8A69-4235B0E4E975}
+		{50C319BE-4B60-4DA1-8BB4-5B4E9B99A082} = {CD9D3C4B-69CC-4818-8A69-4235B0E4E975}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34C36E17-B9A8-4CB1-99CD-669B47983D88}
