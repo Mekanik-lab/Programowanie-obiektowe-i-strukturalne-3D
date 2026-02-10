@@ -147,14 +147,14 @@ internal class Task1
         var q20 = people.Where(p => p.Age == maxAge && p.City == "Kraków");
         Print("Zadanie 20", q20);
 
+        // === POZIOM 3 ===
+
         var q21 = people.Where(p => p.Skills.Contains("C#"));
         Print("Zadanie 21", q21);
 
         var q22 = people.Where(p => p.Skills.Count() > 3);
         Print("Zadanie 22", q22);
 
-        // 23.Znajdź osoby z Warszawy, posortuj je po wieku malejąco i
-        // wypisz tylko ich imię, nazwisko, wiek i pensję.
         var q23 = people.Where(p => p.City == "Warszawa")
             .Select(p => new
             {
@@ -182,6 +182,8 @@ internal class Task1
 
         var q28 = people.Where(p => p.Age == maxAge);
         Print("Zadanie 28", q28);
+
+        // === POZIOM 4 ===
 
         var q29 = people.OrderBy(p => p.Skills.Count());
         Print("Zadanie 29", q29);

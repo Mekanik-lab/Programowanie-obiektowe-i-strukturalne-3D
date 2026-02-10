@@ -15,5 +15,5 @@ public class Order
     public decimal Total => Quantity * PricePerItem;
 
     public override string ToString()
-        => $"{Id}: {Customer} kupi³ {Product} x{Quantity} za {Total:C} [{Status}] {OrderDate:yyyy-MM-dd}";
+        => $"{Id}: {Customer} kupił/a {Product} x{Quantity} za {Total:C} [{Status}] {OrderDate:yyyy-MM-dd}";
 }
