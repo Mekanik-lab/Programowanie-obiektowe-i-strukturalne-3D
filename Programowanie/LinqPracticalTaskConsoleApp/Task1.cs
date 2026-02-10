@@ -146,5 +146,49 @@ internal class Task1
         var maxAge = people.Max(p => p.Age);
         var q20 = people.Where(p => p.Age == maxAge && p.City == "Kraków");
         Print("Zadanie 20", q20);
+
+        var q21 = people.Where(p => p.Skills.Contains("C#"));
+        Print("Zadanie 21", q21);
+
+        var q22 = people.Where(p => p.Skills.Count() > 3);
+        Print("Zadanie 22", q22);
+
+        // 23.Znajdź osoby z Warszawy, posortuj je po wieku malejąco i
+        // wypisz tylko ich imię, nazwisko, wiek i pensję.
+        var q23 = people.Where(p => p.City == "Warszawa")
+            .Select(p => new
+            {
+                p.FirstName,
+                p.LastName,
+                p.Age,
+                p.Salary
+            })
+            .OrderByDescending(p => p.Age);
+        Print("Zadanie 23", q23);
+
+        var q24 = people.Where(p => p.Skills.Contains("Azure"));
+        Print("Zadanie 24", q24);
+
+        var q25 = people.All(p => p.Salary > 4000);
+        Console.WriteLine($"\nZadanie 25\nCzy wszyscy zarabiają conajmniej 4000: {q25}");
+
+        var maxSalary = people.Max(p => p.Salary);
+        var q26 = people.Where(p => p.Salary == maxSalary);
+        Print("Zadanie 26", q26);
+
+        var minSalary = people.Min(p => p.Salary);
+        var q27 = people.Where(p => p.Salary == minSalary);
+        Print("Zadanie 27", q27);
+
+        var q28 = people.Where(p => p.Age == maxAge);
+        Print("Zadanie 28", q28);
+
+        var q29 = people.OrderBy(p => p.Skills.Count());
+        Print("Zadanie 29", q29);
+
+        var q30 = people.Where(p => p.Salary < 8000).ToList();
+        var q30_2 = people.Where(p => p.Salary > 8000).ToList();
+        Print("Zadanie 30", q30);
+        Print("", q30_2);
     }
 }
