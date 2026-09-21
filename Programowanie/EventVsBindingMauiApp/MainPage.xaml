@@ -6,30 +6,27 @@
 
     <ScrollView>
         <StackLayout>
-            <Slider Minimum="0"
-                    Maximum="360"
-                    Margin="40"
-                    Value="0"
-                    MinimumTrackColor="Bisque"
-                    MaximumTrackColor="Aqua"
-                    ValueChanged="Slider_ValueChanged"
-                    x:Name="sliderRotation"/>
+            <Slider x:Name="rotationSlider"
+                Maximum="360"
+                MaximumTrackColor="Aqua"
+                Minimum="0"
+                MinimumTrackColor="Bisque"
+                ValueChanged="Slider_ValueChanged"
+                Value="20" />
+            <Label x:Name="rotationLabel"
+               Margin="40"
+               BackgroundColor="Bisque"
+               HorizontalOptions="Center"
+               Rotation="90"
+               Text="To jest label" />
 
-            <Slider Minimum="0"
-                    Maximum="360"
-                    Margin="40"
-                    Value="0"
-                    MinimumTrackColor="Bisque"
-                    MaximumTrackColor="Aqua"
-                    ValueChanged="Slider_ValueChanged"
-                    x:Name="sliderRotation2"/>   
+            <Label Margin="40"
+               BackgroundColor="Bisque"
+               HorizontalOptions="Center"
+               BindingContext="{x:Reference rotationLabel}"
+               Rotation="{Binding Value }"
+               Text="{Binding Source={x:Reference rotationSlider}, Path=Value, StringFormat='To jest wartość: {0:f}'}" />
 
-            <Label HorizontalOptions="Center"
-                   Margin="40"
-                   TextColor="Black"
-                   x:Name="labelRotation"
-                   Rotation="{Binding Source={x:Reference rotationSlider}, Path=Value}"
-                   Text="{Binding Source={x:Reference rotationSlider}, Path=Value}" />
         </StackLayout>
     </ScrollView>
 
