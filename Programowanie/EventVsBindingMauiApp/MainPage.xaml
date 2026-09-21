@@ -27,8 +27,9 @@
             <Label HorizontalOptions="Center"
                    Margin="40"
                    TextColor="Black"
-                   Rotation="{Binding Source={x:Reference sliderRotation}, Path=Value}"
-                   Text="{Binding Source={x:Reference sliderRotation}, Path=Value}" />
+                   x:Name="labelRotation"
+                   Rotation="{Binding Source={x:Reference rotationSlider}, Path=Value}"
+                   Text="{Binding Source={x:Reference rotationSlider}, Path=Value}" />
         </StackLayout>
     </ScrollView>
 
