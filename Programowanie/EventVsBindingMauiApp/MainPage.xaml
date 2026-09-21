@@ -24,12 +24,11 @@
                     ValueChanged="Slider_ValueChanged"
                     x:Name="sliderRotation2"/>   
 
-            <Label Text="To jest tekst"
-                   HorizontalOptions="Center"
-                   Rotation="0"
+            <Label HorizontalOptions="Center"
                    Margin="40"
                    TextColor="Black"
-                   x:Name="labelRotation"/>
+                   Rotation="{Binding Source={x:Reference sliderRotation}, Path=Value}"
+                   Text="{Binding Source={x:Reference sliderRotation}, Path=Value}" />
         </StackLayout>
     </ScrollView>
 
