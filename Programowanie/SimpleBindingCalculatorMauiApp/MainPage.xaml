@@ -17,7 +17,7 @@
                    TextColor="White"/>
 
             <Entry FontSize="20" 
-                   Text="{Binding FirstNumber}"
+                   Text="{Binding FirstStrNumber}"
                    TextColor="White"
                    />
 
@@ -27,7 +27,7 @@
                    TextColor="White"/>
 
             <Entry FontSize="20" 
-                   Text="{Binding SecondNumber}"/>
+                   Text="{Binding SecondStrNumber}"/>
 
             <Button Text="Oblicz"
                     BackgroundColor="Violet"

@@ -2,18 +2,17 @@
 {
     public partial class MainPage : ContentPage
     {
-        public int FirstNumber { get; set; }
-        public int SecondNumber { get; set; }
-        private int result;
+        public string FirstStrNumber { get; set; }
+        public string SecondStrNumber { get; set; }
 
-        public int Result
+        private string result;
+
+        public string Result
         {
             get
             {
                 return result;
-
             }
-
             set
             {
                 result = value;
@@ -28,7 +27,16 @@
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Result = FirstNumber + SecondNumber;
+            if (int.TryParse(FirstStrNumber, out int firstNumber) &&
+                int.TryParse(SecondStrNumber, out int secondNumber))
+            {
+                int result = firstNumber + secondNumber;
+                Result = result.ToString();
+            }
+            else
+            {
+                Result = "Błędne dane";
+            }
         }
     }
 }
