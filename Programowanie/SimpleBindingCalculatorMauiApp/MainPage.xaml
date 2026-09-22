@@ -4,7 +4,8 @@
              x:Class="SimpleBindingCalculatorMauiApp.MainPage"
              Title="Calculator"
              x:Name="thisPage"
-             BindingContext="{x:Reference thisPage}"> 
+             BindingContext="{x:Reference thisPage}">
+             <!-- Dodanie BindingContext do ContentPage, elementy dzieci dziedziczą -->
 
     <ScrollView>
         <StackLayout Orientation="Vertical" 
