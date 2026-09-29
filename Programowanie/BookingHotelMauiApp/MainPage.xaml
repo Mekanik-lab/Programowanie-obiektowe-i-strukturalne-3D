@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingHotelMauiApp.MainPage"
+             x:Name="thisPage"
+             Title="BookingHotelApp"
+             BindingContext="{x:Reference thisPage}">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Imie i nazwisko:"/>
+            <Entry Text="{Binding FullName, Mode=TwoWay}"/>
+
+            <Label Text="Adres e-mail:"/>
+            <Entry Text="{Binding EmailAdress, Mode=TwoWay}"/>
+
+            <Label Text="Data przyjazdu:"/>
+            <DatePicker MinimumDate="{Binding MinimumDate}"
+                        Date="{Binding ArrivalDate, Mode=TwoWay}"/>
+
+            <Label Text="Liczba nocy:"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Stepper Value="{Binding NightCount, Mode=TwoWay}"
+                         Minimum="1"
+                         Maximum="14"
+                         Increment="1"/>
+
+                <Label Text="{Binding NightCount}"
+                       Margin="10"
+                       FontSize="20"/>
+            </StackLayout>
+
+            <Label Text="Liczba osób:"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Stepper Value="{Binding GuestsCount, Mode=TwoWay}"
+                         Minimum="1"
+                         Maximum="{Binding MaxGuests}"
+                         Increment="1"/>
+
+                <Label Text="{Binding GuestsCount}"
+                       Margin="10"
+                       FontSize="20"/>
+            </StackLayout>
+
+            <Label Text="Rodzaj pokoju:"/>
+
+            <Picker ItemsSource="{Binding RoomType}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedRoom, Mode=TwoWay}"/>
+
+            <Label Text="Śniadanie"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Switch IsToggled="{Binding IsBreakfast, Mode=TwoWay}"/>
+
+                <Label Text="40 zł / dzień"
+                       IsVisible="{Binding IsBreakfast}"
+                       FontSize="20"/>
+            </StackLayout>
+
+            <Label Text="Miejsce parkingowe"/>
+
+            <StackLayout Orientation="Horizontal">
+                <CheckBox IsChecked="{Binding IsParking, Mode=TwoWay}"/>
+
+                <Label Text="30 zł / dzień"
+                       Margin="10"
+                       FontSize="20"
+                       IsVisible="{Binding IsParking}"/>
+            </StackLayout>
+
+            <Button Text="Oblicz koszt"
+                    Command="{Binding Summary}"/>
+
+            <Label Text="{Binding SummaryText}"
+                   FontSize="18"
+                   Margin="10"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

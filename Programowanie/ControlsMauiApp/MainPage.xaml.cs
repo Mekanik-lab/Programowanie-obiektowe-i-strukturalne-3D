@@ -161,13 +161,8 @@ namespace ControlsMauiApp
             set { stepperValue = value; OnPropertyChanged(); }
         }
 
-        private bool isOn;
 
-        public bool IsOn
-        {
-            get { return isOn; }
-            set { isOn = value; OnPropertyChanged(); }
-        }
+        public bool IsOn {  get; set; }
 
         public ObservableCollection<string> AnimalCollection { get; set; }
 
