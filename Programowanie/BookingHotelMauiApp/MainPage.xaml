@@ -72,9 +72,9 @@
             </StackLayout>
 
             <Button Text="Oblicz koszt"
-                    Command="{Binding Summary}"/>
+                    Command="{Binding Calculate}"/>
 
-            <Label Text="{Binding SummaryText}"
+            <Label Text="{Binding SummaryCalculate}"
                    FontSize="18"
                    Margin="10"/>
         </StackLayout>

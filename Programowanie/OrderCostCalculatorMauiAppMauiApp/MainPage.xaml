@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrderCostCalculatorMauiAppMauiApp.MainPage"
+             x:Name="thisPage"
+             Title="OrderCostCalculatorApp"
+             BindingContext="{x:Reference thisPage}">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Nazwa produktu:"/>
+            <Entry Text="{Binding ProductName, Mode=TwoWay}"/>
+            <Label Text="Cena za sztukę:"/>
+            <Entry Text="{Binding ProductPrice, Mode=TwoWay}"
+                   Keyboard="Numeric"/>
+            <Label Text="Liczba sztuk:"/>
+            <StackLayout Orientation="Horizontal">
+                <Stepper Minimum="1"
+                         Maximum="10"
+                         Increment="1"
+                         Value="{Binding Quantity, Mode=TwoWay}"/>
+                <Label Text="{Binding Quantity}"
+                       Margin="10"
+                       FontSize="20"/>
+            </StackLayout>
+            <Picker ItemDisplayBinding="{Binding Name}"
+                    ItemsSource="{Binding ShippingOption}"
+                    SelectedItem="{Binding SelectedShipping, Mode=TwoWay}"/>
+            <Button Text="Oblicz" Command="{Binding Calculate}"/>
+            <Label Text="{Binding Calculate}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

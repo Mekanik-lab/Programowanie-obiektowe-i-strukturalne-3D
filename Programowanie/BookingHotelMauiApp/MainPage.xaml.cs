@@ -181,7 +181,7 @@ namespace BookingHotelMauiApp
             }
             else
             {
-                SummaryText = "Wprowadź poprawne dane";
+                SummaryText = "Wprowadź poprawne dane.";
             }
         }
 
