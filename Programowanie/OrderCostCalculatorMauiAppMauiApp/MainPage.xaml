@@ -27,7 +27,7 @@
                     ItemsSource="{Binding ShippingOption}"
                     SelectedItem="{Binding SelectedShipping, Mode=TwoWay}"/>
             <Button Text="Oblicz" Command="{Binding Calculate}"/>
-            <Label Text="{Binding Calculate}"/>
+            <Label Text="{Binding SummaryCalculate}"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

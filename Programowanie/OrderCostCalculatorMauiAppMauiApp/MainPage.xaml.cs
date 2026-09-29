@@ -65,7 +65,7 @@ namespace OrderCostCalculatorMauiAppMauiApp
         {
             double productCost = Quantity * ProductPrice;
             double shippingCost = SelectedShipping.Price;
-            double totalCost = ProductPrice + shippingCost;
+            double totalCost = productCost + shippingCost;
 
             if(!string.IsNullOrWhiteSpace(productName) &&
                 SelectedShipping is not null)
