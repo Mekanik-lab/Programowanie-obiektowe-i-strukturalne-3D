@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SportsEquipmentRentalMauiApp.MainPage"
+             x:Name="thisPage"
+             BindingContext="{x:Reference thisPage}">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical"
+                     Margin="10"
+                     Spacing="8">
+
+            <Label Text="Wybierz sprzęt:"
+                   FontSize="18"
+                   Margin="0"/>
+
+            <CollectionView ItemsSource="{Binding Equipment}"
+                            SelectedItem="{Binding SelectedEquipment, Mode=TwoWay}"
+                            SelectionMode="Single">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="2,3">
+                            <Label Text="{Binding Name}"
+                                   FontSize="18"
+                                   Margin="6"/>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label Text="Imię i nazwisko:"
+                   FontSize="18"
+                   Margin="0"/>
+
+            <Entry Text="{Binding FullName}"
+                   FontSize="18"
+                   Margin="0"/>
+
+            <Label Text="Liczba dni wypożyczenia:"
+                   FontSize="18"
+                   Margin="0"/>
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="10"
+                         Margin="0">
+
+                <Stepper Minimum="1"
+                         Maximum="7"
+                         Increment="1"
+                         Value="{Binding DayCount, Mode=TwoWay}"
+                         Margin="0"/>
+
+                <Label Text="{Binding DayCount}"
+                       FontSize="20"
+                       Margin="10,5,5,5"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         Margin="0,5,0,0"
+                         Spacing="5">
+
+                <Label Text="Ubezpieczenie"
+                       FontSize="18"
+                       Margin="0"
+                       VerticalOptions="Center"/>
+
+                <CheckBox Margin="0"
+                          VerticalOptions="Center"
+                          IsChecked="{Binding IsInsured, Mode=TwoWay}"/>
+            </StackLayout>
+
+            <Button Text="Oblicz koszt"
+                    FontSize="18"
+                    Margin="0"
+                    Command="{Binding Summary}"/>
+
+            <Label Margin="0"
+                   Text="{Binding SummaryText}"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

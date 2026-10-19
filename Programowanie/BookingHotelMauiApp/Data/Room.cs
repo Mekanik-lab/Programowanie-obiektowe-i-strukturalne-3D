@@ -7,6 +7,6 @@ namespace BookingHotelMauiApp.Data
     public class Room
     {
         public string Name { get; set; }
-        public float Price { get; set; }
+        public double Price { get; set; }
     }
 }
