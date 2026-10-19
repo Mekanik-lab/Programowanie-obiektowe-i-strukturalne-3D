@@ -148,7 +148,7 @@ namespace SportsEquipmentRentalMauiApp
                     insuranceCost = DayCount * 5;
                 }
 
-                string insurance = IsInsured ? "Tak" : "Nie";
+                string insuranceStatus = IsInsured ? "Tak" : "Nie";
 
                 double totalCost = equipmentCost + insuranceCost;
 
@@ -156,7 +156,7 @@ namespace SportsEquipmentRentalMauiApp
                     $"Klient: {FullName}\n" +
                     $"Sprzęt: {SelectedEquipment.Name}\n" +
                     $"Liczba dni: {DayCount}\n" +
-                    $"Ubezpieczenie: {insurance}\n" +
+                    $"Ubezpieczenie: {insuranceStatus}\n" +
                     $"Koszt sprzętu: {DayCount} x {SelectedEquipment.Price}zł = {equipmentCost}zł\n" +
                     $"Ubezpieczenie: {DayCount} x 5zł = {insuranceCost}zł\n" +
                     $"Łącznie: {totalCost}zł";
