@@ -68,7 +68,6 @@ namespace VocabularyFlashcardsMauiApp
             });
 
             InitializeComponent();
-            BindingContext = this;
 
             FlashcardsCarousel.IndicatorView = FlashCardIndicators;
         }
