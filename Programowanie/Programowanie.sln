@@ -125,11 +125,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 OrderCostCalculatorMauiA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCostCalculatorMauiAppMauiApp", "OrderCostCalculatorMauiAppMauiApp\OrderCostCalculatorMauiAppMauiApp.csproj", "{F10AF501-1896-46FE-BC07-A9B0349CCA01}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 SportsEquipmentRentalMauiApp", "08 SportsEquipmentRentalMauiApp", "{6D8E5927-D020-472A-9CC8-31F3FEA75A9F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 SportsEquipmentRentalApp", "08 SportsEquipmentRentalApp", "{6D8E5927-D020-472A-9CC8-31F3FEA75A9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsEquipmentRentalMauiApp", "SportsEquipmentRentalMauiApp\SportsEquipmentRentalMauiApp.csproj", "{44CA4D86-945C-4F94-8D4A-B4F0C951B007}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 VocabularyFlashcardsMauiApp", "09 VocabularyFlashcardsMauiApp", "{103F6921-C37B-4DFC-9430-BE5BC85F5CB6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 VocabularyFlashcardApp", "09 VocabularyFlashcardApp", "{103F6921-C37B-4DFC-9430-BE5BC85F5CB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabularyFlashcardsMauiApp", "VocabularyFlashcardsMauiApp\VocabularyFlashcardsMauiApp.csproj", "{1FFEE49D-E8BD-44C2-BE82-02CEA653AEA3}"
 EndProject
